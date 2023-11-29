@@ -5,7 +5,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   integrations: [
     starlight({
-      title: "SUN DOCS",
+      title: "Sunrise",
       social: {
         github: "https://github.com/sunnng",
       },
@@ -22,6 +22,8 @@ export default defineConfig({
           autogenerate: { directory: "reference" },
         },
       ],
+      components: {},
+      customCss: ["./src/styles/custom.css"],
     }),
   ],
 });
